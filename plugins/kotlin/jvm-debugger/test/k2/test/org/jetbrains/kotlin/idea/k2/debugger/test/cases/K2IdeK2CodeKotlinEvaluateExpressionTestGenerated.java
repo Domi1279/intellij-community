@@ -1766,6 +1766,21 @@ public abstract class K2IdeK2CodeKotlinEvaluateExpressionTestGenerated extends A
                 runTest("../testData/evaluation/multipleBreakpoints/initializer.kt");
             }
 
+            @TestMetadata("inlineFunctionsInClass.kt")
+            public void testInlineFunctionsInClass() throws Exception {
+                runTest("../testData/evaluation/multipleBreakpoints/inlineFunctionsInClass.kt");
+            }
+
+            @TestMetadata("inlineLambdaInInlineFunction.kt")
+            public void testInlineLambdaInInlineFunction() throws Exception {
+                runTest("../testData/evaluation/multipleBreakpoints/inlineLambdaInInlineFunction.kt");
+            }
+
+            @TestMetadata("inlineLambdasInAnonymousObjects.kt")
+            public void testInlineLambdasInAnonymousObjects() throws Exception {
+                runTest("../testData/evaluation/multipleBreakpoints/inlineLambdasInAnonymousObjects.kt");
+            }
+
             @TestMetadata("inlineStackTrace.kt")
             public void testInlineStackTrace() throws Exception {
                 runTest("../testData/evaluation/multipleBreakpoints/inlineStackTrace.kt");
@@ -1806,6 +1821,11 @@ public abstract class K2IdeK2CodeKotlinEvaluateExpressionTestGenerated extends A
                 runTest("../testData/evaluation/multipleBreakpoints/multipleBreakpointsAtLine.kt");
             }
 
+            @TestMetadata("multipleInliningInAnonymousObject.kt")
+            public void testMultipleInliningInAnonymousObject() throws Exception {
+                runTest("../testData/evaluation/multipleBreakpoints/multipleInliningInAnonymousObject.kt");
+            }
+
             @TestMetadata("mutations.kt")
             public void testMutations() throws Exception {
                 runTest("../testData/evaluation/multipleBreakpoints/mutations.kt");
@@ -1814,6 +1834,31 @@ public abstract class K2IdeK2CodeKotlinEvaluateExpressionTestGenerated extends A
             @TestMetadata("nestedCoroutineContexts.kt")
             public void testNestedCoroutineContexts() throws Exception {
                 runTest("../testData/evaluation/multipleBreakpoints/nestedCoroutineContexts.kt");
+            }
+
+            @TestMetadata("nestedInlineFunctions1.kt")
+            public void testNestedInlineFunctions1() throws Exception {
+                runTest("../testData/evaluation/multipleBreakpoints/nestedInlineFunctions1.kt");
+            }
+
+            @TestMetadata("nestedInlineFunctions2.kt")
+            public void testNestedInlineFunctions2() throws Exception {
+                runTest("../testData/evaluation/multipleBreakpoints/nestedInlineFunctions2.kt");
+            }
+
+            @TestMetadata("nestedInlineFunctions3.kt")
+            public void testNestedInlineFunctions3() throws Exception {
+                runTest("../testData/evaluation/multipleBreakpoints/nestedInlineFunctions3.kt");
+            }
+
+            @TestMetadata("nestedInlineLambdas.kt")
+            public void testNestedInlineLambdas() throws Exception {
+                runTest("../testData/evaluation/multipleBreakpoints/nestedInlineLambdas.kt");
+            }
+
+            @TestMetadata("nestedInliningInAnonymousObjects.kt")
+            public void testNestedInliningInAnonymousObjects() throws Exception {
+                runTest("../testData/evaluation/multipleBreakpoints/nestedInliningInAnonymousObjects.kt");
             }
 
             @TestMetadata("noReceiverOnStack.kt")
@@ -1844,6 +1889,11 @@ public abstract class K2IdeK2CodeKotlinEvaluateExpressionTestGenerated extends A
             @TestMetadata("smartcasts.kt")
             public void testSmartcasts() throws Exception {
                 runTest("../testData/evaluation/multipleBreakpoints/smartcasts.kt");
+            }
+
+            @TestMetadata("standardLibraryFunctions.kt")
+            public void testStandardLibraryFunctions() throws Exception {
+                runTest("../testData/evaluation/multipleBreakpoints/standardLibraryFunctions.kt");
             }
 
             @TestMetadata("thisLabels.kt")

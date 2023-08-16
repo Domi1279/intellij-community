@@ -5,8 +5,6 @@ inlinedLambdaInsideSam.kt:7
 InlineStackFrame lambda 'with' in 'main' (inlinedLambdaInsideSam.kt:7)
     JavaValue[local] this: java.lang.String = abc
 KotlinStackFrame (inlinedLambdaInsideSam.kt:5)
-    JavaValue[this] this: InlinedLambdaInsideSamKt$main$1@uniqueID = inlinedLambdaInsideSam.InlinedLambdaInsideSamKt$main$1@hashCode
-        DummyMessageValueNode = No fields to display
 Disconnected from the target VM
 
 Process finished with exit code 0

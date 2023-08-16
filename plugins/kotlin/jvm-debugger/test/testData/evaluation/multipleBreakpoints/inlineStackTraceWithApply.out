@@ -10,8 +10,6 @@ InlineStackFrame lambda 'apply' in 'main' (inlineStackTraceWithApply.kt:21)
         DummyMessageValueNode = Class has no properties
     JavaValue[local] x1: int = 1 (inlineStackTraceWithApply.kt:19)
 KotlinStackFrame (inlineStackTraceWithApply.kt:18)
-    JavaValue[local] this: inlineStackTraceWithAlso.Foo = inlineStackTraceWithAlso.Foo@hashCode
-        DummyMessageValueNode = Class has no properties
 inlineStackTraceWithApply.kt:8
 Compile bytecode for x2
 InlineStackFrame body (inlineStackTraceWithApply.kt:8)
@@ -23,8 +21,6 @@ InlineStackFrame lambda 'apply' in 'main' (inlineStackTraceWithApply.kt:21)
         DummyMessageValueNode = Class has no properties
     JavaValue[local] x1: int = 1
 KotlinStackFrame (inlineStackTraceWithApply.kt:18)
-    JavaValue[local] this: inlineStackTraceWithAlso.Foo = inlineStackTraceWithAlso.Foo@hashCode
-        DummyMessageValueNode = Class has no properties
 inlineStackTraceWithApply.kt:14
 Compile bytecode for x3
 InlineStackFrame myAddChild (inlineStackTraceWithApply.kt:14)
@@ -40,8 +36,6 @@ InlineStackFrame lambda 'apply' in 'main' (inlineStackTraceWithApply.kt:21)
         DummyMessageValueNode = Class has no properties
     JavaValue[local] x1: int = 1
 KotlinStackFrame (inlineStackTraceWithApply.kt:18)
-    JavaValue[local] this: inlineStackTraceWithAlso.Foo = inlineStackTraceWithAlso.Foo@hashCode
-        DummyMessageValueNode = Class has no properties
 Disconnected from the target VM
 
 Process finished with exit code 0

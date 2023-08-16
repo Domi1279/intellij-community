@@ -9,6 +9,7 @@ import com.intellij.openapi.application.ReadAction
 import com.intellij.util.Range
 import com.sun.jdi.LocalVariable
 import com.sun.jdi.Location
+import org.jetbrains.kotlin.codegen.inline.dropInlineScopeInfo
 import org.jetbrains.kotlin.descriptors.CallableMemberDescriptor
 import org.jetbrains.kotlin.descriptors.DeclarationDescriptor
 import org.jetbrains.kotlin.idea.caches.resolve.resolveToDescriptorIfAny
@@ -128,7 +129,7 @@ private fun internalNameMatches(methodName: String, targetMethodName: String): B
 }
 
 private fun LocalVariable.isInlinedFromFunction(methodName: String, isNameMangledInBytecode: Boolean, isInternalMethod: Boolean): Boolean {
-    val variableName = name().trimIfMangledInBytecode(isNameMangledInBytecode)
+    val variableName = name().dropInlineScopeInfo().trimIfMangledInBytecode(isNameMangledInBytecode)
     if (!variableName.startsWith(JvmAbi.LOCAL_VARIABLE_NAME_PREFIX_INLINE_FUNCTION)) return false
     val inlineMethodName = variableName.substringAfter(JvmAbi.LOCAL_VARIABLE_NAME_PREFIX_INLINE_FUNCTION)
     return inlineMethodName == methodName ||
