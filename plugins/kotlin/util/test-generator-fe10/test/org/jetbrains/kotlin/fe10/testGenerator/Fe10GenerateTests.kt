@@ -85,6 +85,7 @@ import org.jetbrains.kotlin.idea.intentions.AbstractMultiFileIntentionTest
 import org.jetbrains.kotlin.idea.intentions.declarations.AbstractJoinLinesTest
 import org.jetbrains.kotlin.idea.internal.AbstractBytecodeToolWindowMultiplatformTest
 import org.jetbrains.kotlin.idea.internal.AbstractBytecodeToolWindowTest
+import org.jetbrains.kotlin.idea.k1.inspections.tests.AbstractK1InspectionTest
 import org.jetbrains.kotlin.idea.kdoc.AbstractKDocHighlightingTest
 import org.jetbrains.kotlin.idea.kdoc.AbstractKDocTypingTest
 import org.jetbrains.kotlin.idea.maven.AbstractKotlinMavenInspectionTest
@@ -1444,6 +1445,12 @@ private fun assembleWorkspace(): TWorkspace = workspace {
 
         testClass<AbstractSharedK1QuickFixTest> {
             model("quickfix", pattern = Patterns.forRegex("^([\\w\\-_]+)\\.kt$"))
+        }
+    }
+
+    testGroup("code-insight/inspections-k1/tests") {
+        testClass<AbstractK1InspectionTest> {
+            model("inspections", pattern = Patterns.forRegex("^(inspections\\.test)$"))
         }
     }
 }

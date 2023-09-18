@@ -46,6 +46,8 @@
     <orderEntry type="module" module-name="kotlin.code-insight.intentions-shared" exported="" />
     <orderEntry type="module" module-name="kotlin.code-insight.intentions-k1" exported="" />
     <orderEntry type="module" module-name="kotlin.code-insight.intentions-k2" exported="" />
+    <orderEntry type="module" module-name="kotlin.code-insight.inspections-shared" exported="" />
+    <orderEntry type="module" module-name="kotlin.code-insight.inspections-k1" exported="" />
     <orderEntry type="module" module-name="kotlin.code-insight.inspections-k2" exported="" />
     <orderEntry type="module" module-name="kotlin.code-insight.k1" exported="" />
     <orderEntry type="module" module-name="kotlin.code-insight.k2" exported="" />
