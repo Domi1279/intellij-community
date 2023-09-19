@@ -147,6 +147,8 @@ abstract class KotlinDescriptorTestCase : DescriptorTestCase(), IgnorableTestCas
 
     protected open val compileWithK2: Boolean get() = false
 
+    protected open val useInlineScopes: Boolean get() = false
+
     override fun setUp() {
         super.setUp()
 
@@ -234,7 +236,13 @@ abstract class KotlinDescriptorTestCase : DescriptorTestCase(), IgnorableTestCas
 
         val compilerFacility = createDebuggerTestCompilerFacility(
             testFiles, jvmTarget,
-            TestCompileConfiguration(useIrBackend(), lambdasGenerationScheme(), languageVersion, enabledLanguageFeatures)
+            TestCompileConfiguration(
+                useIrBackend(),
+                lambdasGenerationScheme(),
+                languageVersion,
+                enabledLanguageFeatures,
+                useInlineScopes
+            )
         )
 
         compileLibrariesAndTestSources(preferences, compilerFacility)
